@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isNavVisible, setNavVisible] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="flex w-full flex-wrap items-center justify-between px-3">
           <div className="mx-2">
             <a className="text-xl text-white dark:text-white" href="#">
-            Country
+              Country
             </a>
           </div>
           {/* Hamburger button for mobile view */}
@@ -71,7 +71,7 @@ const Navbar = () => {
                   href="#"
                   data-te-nav-link-ref=""
                 >
-                   <Link to="/">Home</Link>
+                  <Link to="/">Home</Link>
                 </a>
               </li>
               {/* Features link */}
@@ -110,14 +110,13 @@ const Navbar = () => {
                   href="#"
                   data-te-nav-link-ref=""
                 >
-                 <Link to="/about">About</Link>
+                  <Link to="/about">About</Link>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    
     </>
   );
 };
